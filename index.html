@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nemokama meditacija | Aurelija</title>
+    <meta
+      name="description"
+      content="Nemokama Aurelijos meditacija savivertei stiprinti, vidinei atramai auginti ir drąsiau rinktis save, o ne nuolat taikytis prie kitų."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          };
+        l = d.createElement(e);
+        l.async = 1;
+        l.src = u;
+        n = d.getElementsByTagName(e)[0];
+        n.parentNode.insertBefore(l, n);
+      })(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+      ml('account', '2120588');
+    </script>
+    <style>
+      :root {
+        --burgundy: #5a1e28;
+        --cream: #f3eee9;
+        --gold: #d7923f;
+        --text: #604a4f;
+        --muted: #836e73;
+        --border: #dfd2c6;
+        --white: #ffffff;
+        --shadow: 0 18px 44px rgba(90, 30, 40, 0.08);
+        --radius-xl: 28px;
+        --radius-lg: 22px;
+        --radius-md: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', Arial, sans-serif;
+        color: var(--burgundy);
+        line-height: 1.6;
+        background:
+          radial-gradient(circle at top left, rgba(215, 146, 63, 0.12), transparent 28%),
+          linear-gradient(180deg, #f8f4ef 0%, var(--cream) 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .container {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        padding: 20px 0 10px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .brand-mark {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--gold), var(--burgundy));
+        box-shadow: 0 0 0 8px rgba(215, 146, 63, 0.1);
+      }
+
+      .hero {
+        padding: 18px 0 48px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      .panel,
+      .info-card,
+      .testimonial-card,
+      .quote-card,
+      .cta {
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(223, 210, 198, 0.95);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(8px);
+      }
+
+      .hero-copy,
+      .form-card {
+        padding: 34px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        line-height: 1;
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        font-size: clamp(40px, 5.4vw, 62px);
+        max-width: 10ch;
+      }
+
+      h2 {
+        font-size: clamp(30px, 4.2vw, 46px);
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        font-size: clamp(28px, 3.6vw, 38px);
+      }
+
+      .lead,
+      .section-heading p,
+      .form-intro,
+      .quote-card p,
+      .info-card p,
+      .testimonial-copy,
+      .cta p,
+      .footer-box,
+      .consent-text,
+      .note {
+        color: var(--text);
+      }
+
+      .lead {
+        margin: 18px 0 0;
+        max-width: 56ch;
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+
+      .btn {
+        appearance: none;
+        border: 0;
+        border-radius: 999px;
+        padding: 14px 22px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn-primary {
+        background: var(--burgundy);
+        color: var(--white);
+        box-shadow: 0 14px 28px rgba(90, 30, 40, 0.18);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.75);
+        color: var(--burgundy);
+        border: 1px solid rgba(90, 30, 40, 0.12);
+      }
+
+      .hero-points,
+      .info-grid,
+      .quote-grid,
+      .testimonials {
+        display: grid;
+        gap: 16px;
+      }
+
+      .hero-points {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 28px;
+      }
+
+      .hero-point {
+        padding: 15px;
+        border-radius: 18px;
+        background: rgba(243, 238, 233, 0.88);
+        border: 1px solid rgba(223, 210, 198, 0.9);
+      }
+
+      .hero-point strong,
+      .testimonial-title strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 15px;
+      }
+
+      .hero-point span,
+      .note,
+      .footer-box,
+      .testimonial-name {
+        color: var(--muted);
+      }
+
+      .hero-point span,
+      .note {
+        font-size: 13px;
+      }
+
+      section {
+        padding: 26px 0;
+      }
+
+      .section-heading {
+        max-width: 720px;
+        margin-bottom: 22px;
+      }
+
+      .section-heading p {
+        margin: 0;
+        font-size: 17px;
+      }
+
+      .form-card {
+        position: relative;
+      }
+
+      .mini-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(215, 146, 63, 0.12);
+        color: var(--burgundy);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .form-intro {
+        margin: 10px 0 18px;
+        font-size: 16px;
+      }
+
+      .consent-block {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 12px;
+        align-items: start;
+        margin-bottom: 16px;
+        padding: 15px 16px;
+        border-radius: 18px;
+        background: rgba(243, 238, 233, 0.88);
+        border: 1px solid rgba(223, 210, 198, 0.95);
+      }
+
+      .consent-block input {
+        margin-top: 3px;
+        accent-color: var(--burgundy);
+      }
+
+      .consent-text {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .consent-text a {
+        color: var(--burgundy);
+        font-weight: 700;
+      }
+
+      .ml-wrap {
+        position: relative;
+        border-radius: 22px;
+      }
+
+      .ml-wrap.is-locked {
+        opacity: 0.48;
+      }
+
+      .ml-wrap.is-locked::after {
+        content: 'Pirmiausia pažymėk sutikimą, tada galėsi įvesti el. paštą.';
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 22px;
+        text-align: center;
+        color: var(--burgundy);
+        font-weight: 600;
+        font-size: 14px;
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        pointer-events: auto;
+      }
+
+      .ml-wrap.is-locked .ml-embedded {
+        pointer-events: none;
+      }
+
+      .mailerlite-shell {
+        padding: 8px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(223, 210, 198, 0.95);
+      }
+
+      .note {
+        margin: 14px 0 0;
+      }
+
+      .info-grid,
+      .testimonials {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .quote-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .info-card,
+      .quote-card,
+      .testimonial-card {
+        padding: 24px;
+      }
+
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 14px;
+        border-radius: 50%;
+        background: rgba(215, 146, 63, 0.14);
+        color: var(--burgundy);
+        font-weight: 700;
+      }
+
+      .tag {
+        display: inline-flex;
+        margin-top: 14px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(215, 146, 63, 0.12);
+        color: var(--burgundy);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .testimonial-copy {
+        margin: 0 0 16px;
+      }
+
+      .testimonial-name {
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .cta {
+        padding: 30px;
+        background: linear-gradient(135deg, rgba(90, 30, 40, 0.97), rgba(120, 58, 69, 0.95));
+        color: var(--white);
+      }
+
+      .cta p {
+        margin: 10px 0 0;
+        max-width: 42ch;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 16px;
+      }
+
+      .cta .btn-primary {
+        margin-top: 22px;
+        background: var(--gold);
+        color: var(--burgundy);
+        box-shadow: none;
+      }
+
+      footer {
+        padding: 18px 0 36px;
+      }
+
+      .footer-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding: 18px 0;
+        font-size: 14px;
+      }
+
+      .footer-box a {
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .ml-form-embedWrapper {
+        background: transparent !important;
+      }
+
+      .ml-form-embedBody,
+      .ml-form-embedContent,
+      .ml-form-formContent,
+      .ml-form-successBody {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .ml-form-embedSubmit,
+      .ml-form-embedSubmit button,
+      .ml-form-formContent button,
+      .ml-form-horizontalRow button,
+      .ml-form-embedContainer button[type='submit'] {
+        width: 100% !important;
+        border: 0 !important;
+        border-radius: 999px !important;
+        background: var(--burgundy) !important;
+        color: #fff !important;
+        font-family: 'Inter', Arial, sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+        padding: 16px 20px !important;
+        box-shadow: 0 14px 28px rgba(90, 30, 40, 0.18) !important;
+      }
+
+      .ml-form-embedContainer input,
+      .ml-form-embedContainer textarea,
+      .ml-form-embedContainer select {
+        width: 100% !important;
+        min-height: 56px !important;
+        border-radius: 16px !important;
+        border: 1px solid var(--border) !important;
+        background: rgba(255, 255, 255, 0.92) !important;
+        color: var(--burgundy) !important;
+        font-family: 'Inter', Arial, sans-serif !important;
+        font-size: 16px !important;
+        padding: 14px 16px !important;
+        box-shadow: none !important;
+      }
+
+      .ml-form-embedContainer input::placeholder {
+        color: #8f7b80 !important;
+      }
+
+      .ml-form-embedContainer .form-control,
+      .ml-form-embedContainer .ml-field-group,
+      .ml-form-embedContainer .ml-form-fieldRow,
+      .ml-form-embedContainer .ml-form-horizontalRow {
+        margin-bottom: 12px !important;
+      }
+
+      .ml-form-embedContainer label,
+      .ml-form-embedContainer .ml-form-fieldRow label {
+        color: var(--burgundy) !important;
+        font-family: 'Inter', Arial, sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        margin-bottom: 6px !important;
+      }
+
+      .ml-form-embedContainer h4,
+      .ml-form-embedContainer h3,
+      .ml-form-embedContainer .ml-form-embedContent h4,
+      .ml-form-embedContainer .ml-form-embedContent p,
+      .ml-form-embedContainer .ml-form-successContent h4,
+      .ml-form-embedContainer .ml-form-successContent p,
+      .ml-form-embedContainer .ml-form-embedContent {
+        color: var(--text) !important;
+        font-family: 'Inter', Arial, sans-serif !important;
+      }
+
+      .ml-form-embedContainer .ml-form-checkboxRow,
+      .ml-form-embedContainer .ml-form-embedPermissions {
+        background: rgba(243, 238, 233, 0.88) !important;
+        border: 1px solid rgba(223, 210, 198, 0.95) !important;
+        border-radius: 18px !important;
+        padding: 14px !important;
+      }
+
+      .ml-form-embedContainer .ml-form-checkboxRow label,
+      .ml-form-embedContainer .ml-form-checkboxRow p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+      }
+
+      @media (max-width: 980px) {
+        .hero-grid,
+        .hero-points,
+        .info-grid,
+        .quote-grid,
+        .testimonials {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy,
+        .form-card,
+        .info-card,
+        .quote-card,
+        .testimonial-card,
+        .cta {
+          padding: 24px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          width: min(100% - 20px, 1080px);
+        }
+
+        .topbar {
+          padding-top: 14px;
+        }
+
+        .hero {
+          padding-top: 10px;
+          padding-bottom: 34px;
+        }
+
+        .hero-copy,
+        .form-card,
+        .info-card,
+        .quote-card,
+        .testimonial-card,
+        .cta {
+          padding: 20px;
+          border-radius: 24px;
+        }
+
+        h1 {
+          font-size: 38px;
+        }
+
+        h2 {
+          font-size: 32px;
+        }
+
+        h3 {
+          font-size: 30px;
+        }
+
+        .lead,
+        .section-heading p,
+        .form-intro,
+        .quote-card p,
+        .info-card p,
+        .testimonial-copy,
+        .cta p {
+          font-size: 15px;
+        }
+
+        .btn {
+          width: 100%;
+          text-align: center;
+        }
+
+        .ml-form-embedContainer input,
+        .ml-form-embedContainer textarea,
+        .ml-form-embedContainer select {
+          min-height: 54px !important;
+          font-size: 15px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container topbar">
+      <a class="brand" href="#virsus" aria-label="Aurelija">
+        <span class="brand-mark"></span>
+        <span>Aurelija</span>
+      </a>
+    </div>
+
+    <main id="virsus">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="panel hero-copy">
+            <p class="eyebrow">Nemokama meditacija</p>
+            <h1>Rinktis save tampa saugu.</h1>
+            <p class="lead">
+              Ši meditacija skirta žmogui, kuris pavargo gyventi pagal kitų lūkesčius,
+              nuolat save mažinti ir atidėti savo tikruosius poreikius. Ji padeda grįžti
+              į vidinę atramą, stiprinti savivertę ir drąsiau gyventi savo gyvenimą.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#atsiimti">Atsiimti meditaciją</a>
+              <a class="btn btn-secondary" href="#atsiliepimai">Skaityti atsiliepimus</a>
+            </div>
+
+            <div class="hero-points">
+              <div class="hero-point">
+                <strong>Trumpa ir aiški</strong>
+                <span>Lengvai įtraukiama į dienos ritmą, be pertekliaus.</span>
+              </div>
+              <div class="hero-point">
+                <strong>Vidinė atrama</strong>
+                <span>Padeda mažiau gyventi dėl kitų ir labiau girdėti save.</span>
+              </div>
+              <div class="hero-point">
+                <strong>Stipresnė savivertė</strong>
+                <span>Skirta riboms, orumui ir pasirinkimui rinktis save.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel form-card" id="atsiimti">
+            <div class="mini-badge">Meditacija tavo el. pašte</div>
+            <h3>Gauk nemokamai</h3>
+            <p class="form-intro">
+              Pažymėk sutikimą ir įvesk el. paštą. Meditaciją gausi automatiškai į savo
+              el. paštą kartu su naujienomis, kurios stiprina ryšį su savimi.
+            </p>
+
+            <label class="consent-block" for="consentGate">
+              <input id="consentGate" type="checkbox" />
+              <p class="consent-text">
+                Patvirtinu, kad perskaičiau
+                <a href="privacy.html" target="_blank" rel="noopener noreferrer">privatumo politiką</a>
+                ir sutinku gauti nemokamą meditaciją bei naujienas el. paštu.
+              </p>
+            </label>
+
+            <div class="mailerlite-shell">
+              <div class="ml-wrap is-locked" id="mlWrap">
+                <div class="ml-embedded" data-form="kcNAKR"></div>
+              </div>
+            </div>
+
+            <p class="note">
+              Jei nematai formos iš karto, palauk kelias sekundes, kol MailerLite pilnai užkraus lauką.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Ką gausi</p>
+            <h2>Meditacija tiems, kurie nori nustoti gyventi svetimą scenarijų.</h2>
+            <p>
+              Ne dar vieną gražią frazę, o kryptingą sustojimą, kuris padeda aiškiau pajausti save,
+              mažinti kaltę renkantis savo poreikius ir auginti vidinį leidimą būti tuo, kuo iš tiesų esi.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <div class="number">01</div>
+              <h3>Aiškesnį ryšį su savimi</h3>
+              <p>
+                Meditacija padeda pamatyti, kada gyveni tam, kad būtum patogi kitiems,
+                ir grįžti į savo vidinį balsą.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="number">02</div>
+              <h3>Didesnę savivertę</h3>
+              <p>
+                Stiprinsi vidinį jausmą, kad tavo poreikiai, ribos ir pasirinkimai yra svarbūs,
+                net kai aplinka bando tave nukreipti kitur.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="number">03</div>
+              <h3>Daugiau drąsos rinktis save</h3>
+              <p>
+                Tai švelni, bet tvirta praktika, padedanti mažiau gyventi iš baimės ir dažniau
+                gyventi iš tiesos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Kam ši meditacija skirta</p>
+            <h2>Jei vis dar taikaisi prie kitų, nors viduje jau pavargai.</h2>
+          </div>
+
+          <div class="quote-grid">
+            <article class="quote-card">
+              <p>
+                Tu dažnai žinai, ko nori, bet vis tiek renkiesi tai, kas patogiau kitiems.
+                Po to lieka įtampa, nuovargis ir nemalonus jausmas, kad vėl išdavei save.
+              </p>
+              <span class="tag">Sustoti būtent čia</span>
+            </article>
+
+            <article class="quote-card">
+              <p>
+                Ji tinka, kai norisi daugiau vidinės ramybės, aiškesnių ribų ir stipresnės atramos
+                priimant sprendimus ne iš baimės būti atstumtai, o iš pagarbos sau.
+              </p>
+              <span class="tag">Mažiau įtikti. Daugiau gyventi savą gyvenimą.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="atsiliepimai">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Klientų atsiliepimai</p>
+            <h2>Ne teorija. Tikras pokytis, kurį žmonės jaučia savo gyvenime.</h2>
+          </div>
+
+          <div class="testimonials">
+            <article class="testimonial-card">
+              <p class="testimonial-copy">
+                „Esu labai dėkinga Aurelijai. Jau po kelių mūsų sesijų pradėjau jaustis daug stipresnė
+                ir kitaip žiūrėti į tam tikras situacijas. Viduje jaučiu lengvumą. Kiekvieną kartą labai
+                laukiu mūsų susitikimo. Bendraudama su Aurelija galiu būti savimi ir jaustis laisvai.
+                Labai žavi jos atsidavimas darbui ir nuoširdumas. Gera jausti, kad terapeutė iš tiesų yra
+                suinteresuota tau padėti. Drąsiai galiu rekomenduoti Aureliją, labai džiaugiuosi ją atradusi.“
+              </p>
+              <div class="testimonial-name">Klientės atsiliepimas</div>
+            </article>
+
+            <article class="testimonial-card">
+              <p class="testimonial-copy">
+                „Džiaugiuosi atradusi Aureliją, kuri padėjo nukeliauti taip toli ir suvokti tam tikrus dalykus,
+                iš kur jie atėjo. 4 savaičių nervų sistemos restartas tapo mano kelio pradžia į save. Su
+                Aurelijos duotais įrankiais ir asmeninėmis sesijomis atsirado gilesnis suvokimas ir noras būti
+                savimi, o ne dėl kažko ar kažkam. Tas nuolatinis palaikymas suteikė daugiau pasitikėjimo ir
+                bendrystės jausmą, kad tu ne viena.“
+              </p>
+              <div class="testimonial-name">Ernesta</div>
+            </article>
+
+            <article class="testimonial-card">
+              <p class="testimonial-copy">
+                „Esu jums labai nuoširdžiai dėkinga už ištiestą pagalbos ranką tada, kai man jos labiausiai reikėjo.
+                Atėjau palūžusi ir nusivylusi, bet jau po kelių sesijų jaučiu didelį pokytį savo gyvenime, emocijose
+                ir savijautoje. Kasdieninis rūpestis po sesijų labai daug ką reiškia. Tikrai labai rekomenduoju.“
+              </p>
+              <div class="testimonial-name">Klientės atsiliepimas</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta">
+            <p class="eyebrow" style="color: rgba(255,255,255,0.72)">Tylus, bet tikslus žingsnis</p>
+            <h2 style="color: #fff">Atsiimk meditaciją ir pradėk rinktis save be kaltės.</h2>
+            <p>
+              Jei nori mažiau gyventi iš baimės nuvilti kitus ir daugiau gyventi iš pagarbos sau,
+              ši meditacija yra gera pradžia. Ne rytoj. Dabar.
+            </p>
+            <a class="btn btn-primary" href="#atsiimti">Gauti meditaciją</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-box">
+        <span>© Aurelija. Visos teisės saugomos.</span>
+        <a href="privacy.html">Privatumo politika</a>
+      </div>
+    </footer>
+
+    <script>
+      const consentGate = document.getElementById('consentGate');
+      const mlWrap = document.getElementById('mlWrap');
+
+      function syncGateState() {
+        mlWrap.classList.toggle('is-locked', !consentGate.checked);
+      }
+
+      consentGate.addEventListener('change', syncGateState);
+      syncGateState();
+    </script>
+  </body>
+</html>
